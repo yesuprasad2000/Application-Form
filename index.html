@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body class="bg-light" style="min-height:8000px;">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="mb-4 d-block mx-auto" src="bootstrap-logo-shadow.png" alt="boostrap Logo" width="72px"
+        height="72px" />
+      <h2>Checkout form</h2>
+      <p class="lead">Below is a example form build entirely with boostrap.</p>
+    </div>
+  </div>
+  <div class="container">
+    <h4 class="mb-3">Billing Adress</h4>
+    <form novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Firstname</label>
+          <input id="firstName" type="text" class="form-control" placeholder="john" />
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">LastName</label>
+          <input id="lastName" type="text" class="form-control" placeholder="Smith" />
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+        <div class="col-12">
+          <label for="username" class="form-label">Username</label>
+          <div class="input-group">
+            <span class="input-group-text">@</span>
+            <input id="username" type="text" class="form-control" placeholder="username" />
+          </div>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+        <div class="col-md-5">
+          <label for="country" class="form-label">country</label>
+          <select id="country" class="form-control">
+            <option vlaue="">chosee..</option>
+            <option value="Australia">Australia</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+          </select>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="state" class="form-label">State</label>
+          <select id="state" class="form-control">
+            <option vlaue="">chosee..</option>
+            <option value="Australia">AndraPradesh</option>
+            <option value="China">Uttrapradesh</option>
+            <option value="USA">MadhyaPradesh</option>
+          </select>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <label for="Postcode" class="form-label">Postcode</label>
+          <div class="input-group">
+            <input id="Postcode" type="number" class="form-control" placeholder="1234" required />
+          </div>
+          <div class="invalid-feedback">
+            Valid last name is required.
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="col-12">
+          <div class="form-check">
+            <input id="sameAdress" type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="sameAdress">ShippingAdress s the same as billing</label>
+          </div>
+          <div class="form-check">
+            <input id="safeInfo" type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="safeInfo">Safe this info.</label>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="form-chek">
+          <h4 class="mb-3">Payments</h4>
+          <input id="creditCard" name="paymentMethod" type="radio" class="form-check-input" checked required />
+          <label for="creditCard">creditCard</label>
+        </div>
+        <div class="form-chek">
+          <input id="DebitCard" name="paymentMethod" type="radio" class="form-check-input" checked required />
+          <label for="DebitCard">DebitCard</label>
+        </div>
+        <div class="form-chek">
+          <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" checked required />
+          <label for="paypal">Paypal</label>
+        </div>
+        <div class="row my-3 gy-3">
+          <div class="col-md-6">
+            <label for="fullName" class="form-label">Name of card</label>
+            <input type="text" class="form-control"/>
+            <small class="text-muted">
+              Full name as displayed on card.
+            </small>
+            <div class="invalid-feedback">
+              Name on card is required.
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="cc-number" class="form-label">credit card Number</label>
+            <input type="text" class="form-control"/>
+            <div class="invalid-feedback">
+              Credit card number is required.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="cc-expire" class="form-label">Expiration</label>
+            <input id="cc-expire" type="text" class="form-control"/>
+            <div class="invalid-feedback">
+              Expiration is required.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="cc-cvv" class="form-label">CVV</label>
+            <input id="cc-cvv" type="text" class="form-control"/>
+            <div class="invalid-feedback">
+              CVV is required.
+            </div>
+          </div>
+          <hr class="my-4">
+          <button class="btn btn-primary btn-lg btn-block">Continue to checkout</button>
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
